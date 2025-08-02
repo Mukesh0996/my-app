@@ -16,4 +16,14 @@ padding: 10px;
 border-radius: 5px;
 border: 1px solid rgb(220 208 208);
 outline: none;
+width: 100%;
+}
+
+.inputContainer input[type="color"] {
+    height: 40px;
+}
+
+.inputContainer select {
+    width: 100%;
+    outline: none;
 }

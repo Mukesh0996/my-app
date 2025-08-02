@@ -1,10 +1,10 @@
-const CONSTANTS = {
+export const CONSTANTS = {
     TEXT: "text",
     EMAIL: "email",
     PHONE: "phone",
     FILE: "file",
     PICKLIST:"picklist",
-    COLORPALETTE: "colorPalette",
+    COLORPALETTE: "color",
 }
 
 export const FIELDS = {
@@ -62,12 +62,12 @@ export const FIELDS = {
         }, 
         "address": {
             type: CONSTANTS.TEXT,
-            value:""
+            value:"",
+            placeholder: "Boulevard, Buffalo, USA"
         },
     },
     "4": {
         "font_family": {
-
             type: CONSTANTS.PICKLIST,
             value:""
         },
@@ -75,7 +75,7 @@ export const FIELDS = {
             type: CONSTANTS.COLORPALETTE,
             value:""
         },
-        "icon_color": {
+        "color": {
             type: CONSTANTS.COLORPALETTE,
             value:""
         }
