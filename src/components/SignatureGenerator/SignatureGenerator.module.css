@@ -5,6 +5,45 @@
     border-radius: 10px;
     border: 1px solid rgb(220 208 208);
     height: 50vh;
-    padding: 1rem;
-    
+    padding: 1rem;   
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(220 208 208);
+    cursor: pointer;
+}
+
+.previous {
+
+    background-color: rgb(255, 251, 251);
+    color: #aba9a9;
+}
+
+.previous:hover {
+
+    background-color: rgb(242, 238, 238);
+}
+
+.previous:disabled {
+    pointer-events: none;
+    /* opacity: 0.8; */
+}
+
+.next {
+    background-color: black;
+    color: white;
+}
+
+.next:hover {
+    background-color: rgb(28, 27, 27);
 }
