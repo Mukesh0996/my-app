@@ -1,0 +1,7 @@
+
+.signature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
