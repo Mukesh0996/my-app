@@ -7,19 +7,19 @@ const SignatureGenerator = () => {
 
     const  { step, fields, setStepValue, setFieldValue } = useContext(AppContext);
 
-    const onChangeHandler = ( value, name ) => {
+    const onChangeHandler = ( event, name ) => {
 
        setFieldValue(prevValue => {
 
         let updatedFields = { ...prevValue };
-        updatedFields[step][name].value = value;
+        updatedFields[step][name].value = event.target.value;
         return updatedFields;        
        })
     }
 
     const onStepChange = (value) => {
 
-        if( step == 4 && value == 1  ) {
+        if( step === 4 && value === 1  ) {
             
             return;
         }

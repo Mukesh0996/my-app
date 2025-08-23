@@ -9,7 +9,7 @@ const InputWrapper = ({ name, changeHandler, ...rest}) => {
     return <div className={fieldCss.inputContainer}>
                 <label>
                     <span>{ label }</span> 
-                    <input name={name} onChange={(e) => { changeHandler(e.target.value, name); }} { ...rest } />
+                    <input name={name} onChange={(e) => { changeHandler(e, name); }} { ...rest } />
                 </label>
             </div>   
 
@@ -20,7 +20,9 @@ const FileUploadField = ({name, changeHandler , ...rest}) => {
 
     const fileChangeHandler = (e) => {
 
-        changeHandler(e);
+        console.log(e.target.files);
+
+        changeHandler(e, name);
     }
     return <InputWrapper name={name} changeHandler={fileChangeHandler} { ...rest }/>
 }
